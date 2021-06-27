@@ -2,11 +2,16 @@ import React from 'react';
 import logo from './logo.svg';
 import './App.css';
 import IdCard from './IdCard/IdCard';
+import Greetings from './Greetings/Greetings';
+import Random from './Random/Random';
+
 
 function App() {
   return (
     <div className="App">
-       <h1>IdCard</h1>
+
+       <h1>Id Card</h1>
+
         <IdCard 
           lastName='Doe'
           firstName='John'
@@ -24,8 +29,24 @@ function App() {
           birth={new Date("1993-05-11")}
           picture="https://randomuser.me/api/portraits/women/8.jpg"
         />
+
+    <h1>Greeting</h1>
+
+        <Greetings lang="de">Ludwig</Greetings>
+        <Greetings lang="fr">François</Greetings>
+
+  
+
+    <h1>Random Number</h1>
+
+        <Random min={1} max={6}/>
+        <Random min={1} max={100}/> 
+
+    <h1>Box Color</h1>
+
+
     </div>
   );
 }
 
-export default App;
+export default App; 
