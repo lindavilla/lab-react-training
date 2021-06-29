@@ -1,9 +1,40 @@
 .CreditCard-Box {
-    border: 2px solid blue;
-    height: 50px;
-    width: 200px;
+    border: 2px solid black;
+    border-radius: 15px;
+    height: 100px;
+    width: 220px;
     padding: 20px;
     margin: 30px;
+    line-height: 10px;
+}
 
-   
+.Type {
+   font-size: 15px;
+   text-align: right;
+
+}
+
+.Number {
+    display: flex;
+justify-content: center;
+font-size: 22px;
+padding-top: 20px;
+font-weight: bold;
+}
+
+.Bank {
+display: flex;
+align-items: flex-start;
+padding-top: 20px;
+font-size: 10px;
+}
+
+.Owner {
+font-size: 10px;
+text-align: left;
+
+}
+
+.Bank-Text {
+    margin-left: 10px;
 }

@@ -6,7 +6,24 @@ import Rating from '../Rating/Rating';
 class DriverCard extends Component {
     render() {
         return (
-            <div></div>
+            <div className="LicenseBox">
+                <div className="Image">
+                    <img src={this.props.img}></img>
+                </div>
+                <div>
+                    <p>
+                        {this.props.name}
+                    </p>
+                    <div>
+                        <Rating>{this.props.rating}</Rating>
+                    </div>
+                    <p>
+                        {this.props.car.model}
+                        -
+                        {this.props.car.licensePlate}
+                    </p>
+                </div>
+            </div>
         )
     }
 }

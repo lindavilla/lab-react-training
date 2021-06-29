@@ -7,20 +7,21 @@ class CreditCard extends Component {
         return(
     <div className="CreditCard-Box" style={{ backgroundColor: this.props.bgColor,
         color: this.props.color}}>
-        <div>
-            <p>{this.props.type}</p>
+        <div className="Info">
+        <div className="Type">
+            <div>{this.props.type}</div>
         </div>
-        <div>
-            <p>···· ···· ···· {this.props.number.substr(-4)}</p>
+        <div className="Number">
+            <div>···· ···· ···· {this.props.number.substr(-4)}</div>
         </div>
-        <div>
-           <p> Expires {('0'+this.props.expirationMonth).substr(-2)}/{this.props.expirationYear.toString().substr(2)} </p>
-           <p>{this.props.bank}</p>
+        <div className="Bank">
+           <div> Expires {('0'+this.props.expirationMonth).substr(-2)}/{this.props.expirationYear.toString().substr(2)}</div> 
+           <div className="Bank-Text">{this.props.bank}</div>
         </div>
-        <div>
+        <div className="Owner">
             <p>{this.props.owner}</p>
         </div>
-
+</div>
     </div>
         )
     }
