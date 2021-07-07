@@ -8,6 +8,11 @@ import BoxColor from './BoxColor/BoxColor';
 import CreditCard from './CreditCard/CreditCard';
 import Rating from './Rating/Rating';
 import DriverCard from './DriverCard/DriverCard';
+import LikeButton from './LikeButton/LikeButton';
+import ClickablePicture from './ClickablePicture/ClickablePicture';
+import Dice from './Dice/Dice';
+import Carousel from './Carousel/Carousel';
+
 
 function App() {
   return (
@@ -103,6 +108,30 @@ function App() {
           model: "Audi A3",
           licensePlate: "BE33ER"
         }} />
+    <h1>Like Button</h1>
+      <LikeButton /> <LikeButton />
+
+    <h1>Clickable Picture</h1>
+      <ClickablePicture
+        img='/img/persons/cat.png'
+        imgClicked='/img/persons/cat1.png'
+    />  
+
+    <h1>Dice</h1>
+        <Dice></Dice>
+
+    <h1>Carousel</h1>
+    <Carousel
+      imgs={[
+      'https://randomuser.me/api/portraits/women/1.jpg',
+      'https://randomuser.me/api/portraits/men/1.jpg',
+      'https://randomuser.me/api/portraits/women/2.jpg',
+      'https://randomuser.me/api/portraits/men/2.jpg'
+      ]}
+    />
+    <h1>Numbers Table</h1>
+
+    <h1>Facebook</h1>
 
     </div>
   );
