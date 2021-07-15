@@ -12,6 +12,7 @@ import LikeButton from './LikeButton/LikeButton';
 import ClickablePicture from './ClickablePicture/ClickablePicture';
 import Dice from './Dice/Dice';
 import Carousel from './Carousel/Carousel';
+import NumbersTable from './NumbersTable/NumbersTable';
 
 
 function App() {
@@ -130,7 +131,7 @@ function App() {
       ]}
     />
     <h1>Numbers Table</h1>
-
+    <NumbersTable limit={12} />
     <h1>Facebook</h1>
 
     </div>
