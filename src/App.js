@@ -13,7 +13,9 @@ import ClickablePicture from './ClickablePicture/ClickablePicture';
 import Dice from './Dice/Dice';
 import Carousel from './Carousel/Carousel';
 import NumbersTable from './NumbersTable/NumbersTable';
-
+import profiles from './data/berlin.json';
+import Facebook from './Facebook/Facebook';
+import SignUp from './SignUp/SignUp';
 
 function App() {
   return (
@@ -122,17 +124,23 @@ function App() {
         <Dice></Dice>
 
     <h1>Carousel</h1>
-    <Carousel
-      imgs={[
-      'https://randomuser.me/api/portraits/women/1.jpg',
-      'https://randomuser.me/api/portraits/men/1.jpg',
-      'https://randomuser.me/api/portraits/women/2.jpg',
-      'https://randomuser.me/api/portraits/men/2.jpg'
-      ]}
-    />
+      <Carousel
+        imgs={[
+        'https://randomuser.me/api/portraits/women/1.jpg',
+        'https://randomuser.me/api/portraits/men/1.jpg',
+        'https://randomuser.me/api/portraits/women/2.jpg',
+        'https://randomuser.me/api/portraits/men/2.jpg'
+        ]}
+      />
     <h1>Numbers Table</h1>
-    <NumbersTable limit={12} />
+      <NumbersTable limit={12} />
+
+
     <h1>Facebook</h1>
+      <Facebook />
+      
+    <h1>SignUp Page</h1>
+      <SignUp />
 
     </div>
   );

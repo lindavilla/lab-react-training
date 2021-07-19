@@ -1,0 +1,20 @@
+.form {
+    border:blueviolet 2px solid;
+    border-radius: 10px;
+    width: 250px;
+    display: flex;
+    justify-content: left;
+    margin: 20px;
+    padding: 10px;
+}
+.form-group {
+    width: 20px;
+    margin-left: 10px;
+    margin-top: 10px;
+}
+
+.submit-button {
+    margin: 15px;
+    display: flex;
+    justify-content: left;
+}
